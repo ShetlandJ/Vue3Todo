@@ -1,28 +1,46 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <v-app>
+        <div class="text-center">
+            <v-btn class="switcher" text large @click="route = 0">Todos</v-btn>
+            <v-btn class="switcher" text large @click="route = 1">Notes</v-btn>
+        </div>
+
+        <complex v-if="route === 0" />
+        <notes v-else />
+    </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import useSeeder from './hooks/useSeeder';
+import { value } from 'vue-function-api';
+
+import Complex from "./components/Complex.vue";
+import Notes from "./components/Notes.vue";
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    name: "App",
+    components: {
+        Complex,
+        Notes,
+    },
+    setup() {
+        const route = value(0)
+        const seeder = useSeeder()
+
+        return {
+            seeder,
+            route,
+        }
+    },
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+    font-family: "Roboto, sans-serif";
+}
+
+.v-btn:not(.v-btn--round).v-size--large {
+    font-size: 40px;
 }
 </style>
