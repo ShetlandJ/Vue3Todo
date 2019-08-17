@@ -1,11 +1,12 @@
-
 <template>
     <v-card>
-        <h2>{{numberOfPets}} pets.</h2>
+        <v-list-item>
+            <h2>{{numberOfPets}} pets.</h2>
+        </v-list-item>
         <v-list-item v-for="(pet, index) in pets" :key="index">
             <v-btn @click="setChosenPet(pet)">{{pet}}</v-btn>
         </v-list-item>
-        {{praisedPetString}}
+        <v-list-item>{{praisedPetString}}</v-list-item>
     </v-card>
 </template>
 
@@ -13,7 +14,6 @@
 export default {
     data() {
         return {
-            v3: false,
             pets: ["Bark Twain", "Chairman Meow", "Christopher Squawken"],
             chosenPet: ""
         };
