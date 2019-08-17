@@ -5,7 +5,7 @@
             <v-btn class="switcher" text large @click="route = 1">Notes</v-btn>
         </div>
 
-        <complex v-if="route === 0" />
+        <todo-list v-if="route === 0" />
         <notes v-else />
     </v-app>
 </template>
@@ -14,13 +14,13 @@
 import useSeeder from './hooks/useSeeder';
 import { value } from 'vue-function-api';
 
-import Complex from "./components/Complex.vue";
+import TodoList from "./components/TodoList.vue";
 import Notes from "./components/Notes.vue";
 
 export default {
     name: "App",
     components: {
-        Complex,
+        TodoList,
         Notes,
     },
     setup() {

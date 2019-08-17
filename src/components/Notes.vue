@@ -28,39 +28,9 @@
 
 <script>
 import useTodos from "../hooks/useTodos";
-import { computed, value } from "vue-function-api";
-
 export default {
     setup() {
         const { addTodo, newTodo } = useTodos();
-
-// const todoDay = () => {
-        //     var date = new Date();
-        //     var days = [
-        //         "Sunday",
-        //         "Monday",
-        //         "Tuesday",
-        //         "Wednesday",
-        //         "Thursday",
-        //         "Friday",
-        //         "Saturday"
-        //     ];
-        //     return days[date.getDay()];
-        // };
-
-        // const capitalise = value => {
-        //     if (!value) return "";
-        //     value = value.toString();
-        //     return value.charAt(0).toUpperCase() + value.slice(1);
-        // };
-
-        // const day = todoDay();
-        // const date = new Date().getDate();
-        // const year = new Date().getFullYear();
-
-        // const dateString = computed(() => {
-        //     return `${date} ${day} ${year}`;
-        // });
 
         return {
             addTodo,
