@@ -17,16 +17,11 @@ export default new Vuex.Store({
     },
     mutations: {
         SET_TODO(state, payload) {
-            state.todos.push(payload);
+            state.todos = [...state.todos, payload];
         },
         DELETE_TODO(state, payload) {
             const index = state.todos.findIndex(todo => todo.id === payload);
             state.todos.splice(index, 1);
-        }
-    },
-    getters: {
-        todos(state) {
-            return state.todos
         }
     },
 })
