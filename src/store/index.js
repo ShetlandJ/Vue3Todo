@@ -8,7 +8,7 @@ export default new Vuex.Store({
         todos: [
             {
                 id: 1,
-                title: "This is a long title, hope it gets abbreviated",
+                title: "This is long, I hope that it gets abbreviated",
                 done: false
             },
             {

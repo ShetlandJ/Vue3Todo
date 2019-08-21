@@ -3,6 +3,7 @@ import Home from '../components/Home.vue'
 import TodoList from '../components/TodoList.vue'
 import Notes from '../components/Notes.vue'
 import PetList from '../components/PetList.vue'
+import Width from '../components/Width.vue';
 
 import VueRouter from 'vue-router'
 
@@ -31,5 +32,10 @@ export default new VueRouter({
             path: '/petlist',
             component: PetList
         },
+        {
+            name: 'width',
+            path: "/width",
+            component: Width
+        }
     ]
 })

@@ -5,6 +5,7 @@
             <v-btn class="switcher" :to="{ name: 'todo'}" text large>Todos</v-btn>
             <v-btn class="switcher" :to="{ name: 'notes'}" text large>Notes</v-btn>
             <v-btn class="switcher" :to="{ name: 'petlist'}" text large>Pet List</v-btn>
+            <v-btn class="switcher" :to="{ name: 'width'}" text large>Width</v-btn>
         </div>
 
         <router-view>
