@@ -7,6 +7,7 @@ import { plugin } from 'vue-function-api'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import store from './store/index';
+import router from './router/router';
 
 Vue.use(plugin)
 Vue.use(Vuetify)
@@ -18,4 +19,5 @@ new Vue({
   vuetify,
   render: h => h(App),
   store,
+  router,
 }).$mount('#app')

@@ -1,7 +1,17 @@
 <template>
     <v-card>
+        <v-flex xs12 class="add-pet">
+            <v-text-field
+                clearable
+                v-model="newPet"
+                id="newPet"
+                name="newPet"
+                label="Adopt a new pet!"
+                @keyup.enter="addPet"
+            />
+        </v-flex>
         <v-list-item>
-            <h2>{{numberOfPets}} pets.</h2>
+            <h2>{{numberOfPetsString}}</h2>
         </v-list-item>
         <v-list-item v-for="(pet, index) in pets" :key="index">
             <v-btn @click="setChosenPet(pet)">{{pet}}</v-btn>
@@ -26,6 +36,17 @@ export default {
             return pets.value.length;
         });
 
+        const numberOfPetsString = computed(() => {
+            return `${numberOfPets.value} pets.`
+        })
+
+        // Pet addition
+        const newPet = value("");
+        const addPet = () => {
+            pets.value = [...pets.value, newPet.value];
+            newPet.value = "";
+        }
+
         // Pet actions
         let chosenPet = value("");
 
@@ -46,6 +67,9 @@ export default {
             pets,
             praisedPetString,
             setChosenPet,
+            newPet,
+            addPet,
+            numberOfPetsString
         };
     }
 };
@@ -53,5 +77,9 @@ export default {
 <style scoped>
 .done {
     text-decoration: line-through;
+}
+
+.add-pet {
+    margin: 5px;
 }
 </style>
