@@ -11,7 +11,7 @@ export default function useBackgroundColour({ value }) {
       return 'orange'
     }
 
-    return 'red'
+    return 'tomato'
   })
 
   return {

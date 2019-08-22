@@ -14,6 +14,8 @@
                     <p>The Notes page is to demonstrate how to export only parts of the useTodos file to achieve what we need.</p>
 
                     <p>The PetList component has a toggle which flips the code between two components that render identical template, but are arranged with Vue 2 and Vue 3's structure respectively.</p>
+
+                    <p>The Width component is an example of one hook passing data to another hook. This isn't currently possible to do with mixins. The width is determined (on load) in one hook, extracted from that hook and fed into another, changing the colour of the div accordingly.</p>
                 </div>
             </v-container>
         </v-content>

@@ -3,6 +3,16 @@
         <v-app>
             <v-content>
                 <v-container>
+                    <v-alert type="success">
+                        <p>
+                            <strong>Todo list</strong> demonstrates the usage of hooks to import data that is relevant to this file. There is a todo hook, <m-d text="useTodos" />, which encapsulate all the logic that we would want to use with our Todo component, and exports it to this Todo component.
+                        </p>
+
+                        <p>
+                            This component also demonstrates how the exported items from the hooks can work in conjunction with regular Vue 3 function api structures. It uses imported logic as well as component specific logic to achieve what we see below.
+                        </p>
+                    </v-alert>
+
                     <v-layout row justify-center class="ma-5">
                         <v-flex xs12 sm8>
                             <v-card>
@@ -85,8 +95,12 @@
 <script>
 import useTodos from "../hooks/useTodos";
 import { computed } from "vue-function-api";
+import MD from "./Global/MD.vue";
 
 export default {
+    components: {
+        MD
+    },
     setup() {
         const todoDay = () => {
             var date = new Date();
@@ -115,8 +129,8 @@ export default {
         const { todos, addTodo, removeTodo, newTodo } = useTodos();
 
         const dateString = computed(() => {
-            return `${date} ${day} ${year}`
-        })
+            return `${date} ${day} ${year}`;
+        });
 
         return {
             addTodo,
@@ -128,9 +142,9 @@ export default {
             removeTodo,
             todos,
             todoDay,
-            year,
+            year
         };
-    },
+    }
 };
 </script>
 <style scoped>
