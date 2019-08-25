@@ -95,12 +95,8 @@
 <script>
 import useTodos from "../hooks/useTodos";
 import { computed } from "vue-function-api";
-import Code from "./Global/Code.vue";
 
 export default {
-    components: {
-        Code
-    },
     setup() {
         const todoDay = () => {
             var date = new Date();

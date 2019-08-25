@@ -36,13 +36,11 @@
 import { value, computed } from "vue-function-api";
 import PetListV2 from "./PetListV2";
 import PetListV3 from "./PetListV3";
-import Code from "./Global/Code.vue";
 
 export default {
     components: {
         PetListV2,
         PetListV3,
-        Code
     },
     setup() {
         const v3 = value(true);
