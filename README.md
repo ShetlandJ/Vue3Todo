@@ -1,4 +1,4 @@
-# vuetwothree
+# Vue 3 Composition API examples
 
 ## Project setup
 ```
