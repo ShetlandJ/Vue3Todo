@@ -99,8 +99,8 @@ import { computed } from "vue-function-api";
 export default {
     setup() {
         const todoDay = () => {
-            var date = new Date();
-            var days = [
+            const date = new Date();
+            const days = [
                 "Sunday",
                 "Monday",
                 "Tuesday",

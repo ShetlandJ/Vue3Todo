@@ -9,6 +9,8 @@ yarn install
 
 Vue 3's function-based API was proposed in an RFC in May 2019, and it was divisive. I wanted to better understand the benefits and so I created this repository for the purposes of better appreciating some of the changes that will be coming down the line.
 
+The project was used in conjunction with a presentation that I made for VueJS Glasgow.
+
 ## The project
 
 The project is divided into two parts, "Todo" and "Notes". The Todo list was forked from a handy Codepen made by [@sharon-the-encoder](https://codepen.io/sharon-the-encoder) (@CodeFa on Github) - which sped up my intial work!

@@ -8,7 +8,7 @@ export default function useTodos() {
 
 
     const addTodo = () => {
-        var value = newTodo.value && newTodo.value.trim();
+        const value = newTodo.value && newTodo.value.trim();
         if (!value) {
             return;
         }
