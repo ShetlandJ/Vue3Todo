@@ -6,15 +6,15 @@
                     <v-alert type="success">
                         <p>
                             <strong>Petlist</strong> shows the benefits of Vue 3's approach in terms of component composition. Vue 2.x's Object structure helpfully portions up your javascript into objects such as
-                            <m-d text="data" />,
-                            <m-d text="computed" /> etc. This is helpful for keeping similar data together in your Vue and for consistency in the codebase.
+                            <code>data</code>
+                            <code>computed</code> etc. This is helpful for keeping similar data together in your Vue and for consistency in the codebase.
                         </p>
 
                         <p>
                             But this type of structure can cause problems with large components: Eslint, for example, auto-formats your data object at the top of the Vue instance, and methods at the bottom, with
-                            <m-d text="computed" />,
-                            <m-d text="created" />,
-                            <m-d text="watch" /> etc all between them. Methods commonly mutate data properties, so having them apart doesn't make a lot of sense.
+                            <code>computed</code>,
+                            <code>created</code>,
+                            <code>watch</code> etc all between them. Methods commonly mutate data properties, so having them apart doesn't make a lot of sense.
                         </p>
 
                         <p>With Vue 3, we are not bound to store by that structure. We can have relevant data, methods and computed properties sitting adjacent, keeping relevant logic together.</p>
@@ -36,13 +36,13 @@
 import { value, computed } from "vue-function-api";
 import PetListV2 from "./PetListV2";
 import PetListV3 from "./PetListV3";
-import MD from "./Global/MD.vue";
+import Code from "./Global/Code.vue";
 
 export default {
     components: {
         PetListV2,
         PetListV3,
-        MD
+        Code
     },
     setup() {
         const v3 = value(true);

@@ -10,6 +10,7 @@
                 @keyup.enter="addPet"
             />
         </v-flex>
+
         <v-list-item>
             <h2>{{numberOfPetsString}}</h2>
         </v-list-item>
@@ -63,13 +64,13 @@ export default {
         });
 
         return {
+            addPet,
+            newPet,
             numberOfPets,
+            numberOfPetsString,
             pets,
             praisedPetString,
-            setChosenPet,
-            newPet,
-            addPet,
-            numberOfPetsString
+            setChosenPet
         };
     }
 };
