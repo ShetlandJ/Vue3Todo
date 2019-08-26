@@ -8,7 +8,9 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import store from './store/index';
 import router from './router/router';
+import VueCompositionApi from '@vue/composition-api';
 
+Vue.use(VueCompositionApi);
 Vue.use(plugin)
 Vue.use(Vuetify)
 Vue.use(Vuex)

@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import { value, computed } from "vue-function-api";
+import { ref, computed } from "@vue/composition-api";
 import PetListV2 from "./PetListV2";
 import PetListV3 from "./PetListV3";
 
@@ -43,8 +43,9 @@ export default {
         PetListV3,
     },
     setup() {
-        const v3 = value(true);
+        const v3 = ref(true);
         const toggleLabel = computed(() => {
+
             if (v3.value) {
                 return "Vue 3 function api";
             }

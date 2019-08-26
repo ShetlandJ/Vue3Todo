@@ -12,9 +12,9 @@
         </v-flex>
 
         <v-list-item>
-            <h2>{{numberOfPetsString}}</h2>
+            <h2>{{petList.numberOfPetsString}}</h2>
         </v-list-item>
-        <v-list-item v-for="(pet, index) in pets" :key="index">
+        <v-list-item v-for="(pet, index) in petList.pets" :key="index">
             <v-btn @click="setChosenPet(pet)">{{pet}}</v-btn>
         </v-list-item>
         <v-list-item>{{praisedPetString}}</v-list-item>
@@ -22,34 +22,26 @@
 </template>
 
 <script>
-import { value, computed } from "vue-function-api";
+import { computed, ref, reactive } from "@vue/composition-api";
 
 export default {
     setup() {
         // Pet list
-        const pets = value([
-            "Bark Twain",
-            "Chairman Meow",
-            "Christopher Squawken"
-        ]);
-
-        const numberOfPets = computed(() => {
-            return pets.value.length;
-        });
-
-        const numberOfPetsString = computed(() => {
-            return `${numberOfPets.value} pets.`
+        const petList = reactive({
+            pets: ["Bark Twain", "Chairman Meow", "Christopher Squawken"],
+            numberOfPets: computed(() => petList.pets.length),
+            numberOfPetsString: computed(() => `${petList.numberOfPets} pets.`)
         })
 
         // Pet addition
-        const newPet = value("");
+        let newPet = ref("");
         const addPet = () => {
-            pets.value = [...pets.value, newPet.value];
+            petList.pets = [...petList.pets, newPet.value];
             newPet.value = "";
-        }
+        };
 
         // Pet actions
-        let chosenPet = value("");
+        let chosenPet = ref("");
 
         const setChosenPet = pet => {
             chosenPet.value = pet;
@@ -66,9 +58,7 @@ export default {
         return {
             addPet,
             newPet,
-            numberOfPets,
-            numberOfPetsString,
-            pets,
+            petList,
             praisedPetString,
             setChosenPet
         };
