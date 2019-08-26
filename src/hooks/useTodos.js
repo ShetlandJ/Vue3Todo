@@ -6,7 +6,6 @@ export default function useTodos() {
     const newTodo = ref('');
     const todos = computed(() => store.getters['todos']);
 
-
     const addTodo = () => {
         const value = newTodo.value && newTodo.value.trim();
         if (!value) {
