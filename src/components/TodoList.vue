@@ -5,7 +5,7 @@
                 <v-container>
                     <v-alert type="success">
                         <p>
-                            <strong>Todo list</strong> demonstrates the usage of hooks to import data that is relevant to this file. There is a todo hook, <code>useTodos</code> text="useTodos" />, which encapsulate all the logic that we would want to use with our Todo component, and exports it to this Todo component.
+                            <strong>Todo list</strong> demonstrates the usage of hooks to import data that is relevant to this file. There is a todo hook, <code>useTodos</code>, which encapsulate all the logic that we would want to use with our Todo component, and exports it to this Todo component.
                         </p>
 
                         <p>

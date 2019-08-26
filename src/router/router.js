@@ -4,6 +4,7 @@ import TodoList from '../components/TodoList.vue'
 import Notes from '../components/Notes.vue'
 import PetList from '../components/PetList.vue'
 import Width from '../components/Width.vue';
+import Cities from '../components/Cities.vue';
 
 import VueRouter from 'vue-router'
 
@@ -36,6 +37,11 @@ export default new VueRouter({
             name: 'width',
             path: "/width",
             component: Width
+        },
+        {
+            name: 'cities',
+            path: 'cities',
+            component: Cities
         }
     ]
 })
