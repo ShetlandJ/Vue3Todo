@@ -26,8 +26,7 @@
 <script>
 import useBackgroundColour from "../hooks/useBackgroundColour.js";
 import useWidth from "../hooks/useWidth.js";
-
-import { computed } from "vue-function-api";
+import { computed } from "@vue/composition-api";
 
 export default {
     setup() {

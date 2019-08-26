@@ -1,4 +1,4 @@
-import { computed } from 'vue-function-api';
+import { computed } from "@vue/composition-api";
 
 export default function useBackgroundColour({ value }) {
   const backgroundColour = computed(() => {

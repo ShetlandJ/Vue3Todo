@@ -1,4 +1,4 @@
-import { onCreated } from 'vue-function-api';
+import { onCreated } from "@vue/composition-api";
 import store from '../store/index';
 
 function todoSetup() {
