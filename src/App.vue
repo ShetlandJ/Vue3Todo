@@ -12,7 +12,7 @@
                     <v-btn :to="{ name: 'notes'}" text>Notes</v-btn>
                     <v-btn :to="{ name: 'petlist'}" text>Pet List</v-btn>
                     <v-btn :to="{ name: 'width'}" text>Width</v-btn>
-                    <v-btn :to="{ name: 'props'}" text>Props</v-btn>
+                    <v-btn :to="{ name: 'cities'}" text>Cities</v-btn>
                 </v-toolbar-items>
             </v-toolbar>
         </div>

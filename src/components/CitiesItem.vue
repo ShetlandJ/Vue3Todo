@@ -1,5 +1,5 @@
 <template>
-    <v-list-item-content>
+    <v-list-item-content ref="city-item">
         <v-list-item-title>City: {{name}}</v-list-item-title>
         <v-list-item-subtitle>Country: {{country}}</v-list-item-subtitle>
         <v-list-item-subtitle>{{visitedString}}</v-list-item-subtitle>
