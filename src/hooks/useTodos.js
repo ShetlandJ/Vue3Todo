@@ -1,9 +1,9 @@
-import { computed, value } from 'vue-function-api';
+import { ref, computed } from "@vue/composition-api";
 import store from '../store/index';
 
 export default function useTodos() {
 
-    const newTodo = value('');
+    const newTodo = ref('');
     const todos = computed(() => store.getters['todos']);
 
 

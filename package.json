@@ -8,10 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vue/composition-api": "^0.2.1",
     "core-js": "^2.6.5",
     "material-design-icons-iconfont": "^5.0.1",
     "vue": "^2.6.10",
-    "vue-function-api": "^2.1.2",
     "vue-router": "^3.1.2",
     "vuetify": "^2.0.0",
     "vuex": "^3.1.1"
