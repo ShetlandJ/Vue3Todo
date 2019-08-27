@@ -13,8 +13,15 @@ The project was used in conjunction with a presentation that I made for VueJS Gl
 
 ## The project
 
-The project is divided into two parts, "Todo" and "Notes". The Todo list was forked from a handy Codepen made by [@sharon-the-encoder](https://codepen.io/sharon-the-encoder) (@CodeFa on Github) - which sped up my intial work!
+The project is divided into a series of little apps that demonstrate how to achieve some of the basic Vue 2.x outcomes with Vue 3.0's API.
 
-The project is uses a store, components and hooks. The store manages all the CR(U)D of the Todo List Items, the hooks feed that information to the component, which largely becomes a template with very little in the way of logic inside.
+The Todo list was forked from a handy Codepen made by [@sharon-the-encoder](https://codepen.io/sharon-the-encoder) (@CodeFa on Github) - which sped up my intial work!
 
-The Notes page is purely designed to show the extensibility of the hooks files. It's not the best example in the world, but it shows how easy it is to import the functionality required to interact with the store via the useTodos.js hooks file.
+## Smarter mixins aka hooks
+
+Vue 2.x:
+![Vue 2.x mixins](https://i.imgur.com/h8udhrG.png)
+
+Vue 3.0:
+
+![Vue 3.0 hooks](https://i.imgur.com/znFzKtV.png)
