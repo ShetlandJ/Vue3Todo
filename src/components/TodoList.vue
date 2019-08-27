@@ -94,7 +94,7 @@
 
 <script>
 import useTodos from "../hooks/useTodos";
-import { computed } from '@vue/composition-api'
+import { computed } from '@vue/composition-api';
 
 export default {
     setup() {

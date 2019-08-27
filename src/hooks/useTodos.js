@@ -26,9 +26,9 @@ export default function useTodos() {
     }
 
     return {
-        todos,
         addTodo,
+        newTodo,
         removeTodo,
-        newTodo
+        todos
     };
 }

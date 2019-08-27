@@ -24,8 +24,8 @@
 </template>
 
 <script>
-import useBackgroundColour from "../hooks/useBackgroundColour.js";
 import useWidth from "../hooks/useWidth.js";
+import useBackgroundColour from "../hooks/useBackgroundColour.js";
 import { computed } from "@vue/composition-api";
 
 export default {
@@ -40,7 +40,6 @@ export default {
 
         return {
             windowWidth,
-            backgroundColour,
             divStyle
         };
     }
