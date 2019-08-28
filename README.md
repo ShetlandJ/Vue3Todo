@@ -1,9 +1,28 @@
 # Vue 3 Composition API examples
 
 ## Project setup
+
 ```
+
 yarn install
+
 ```
+
+## Docker setup
+
+Build the container
+```
+docker-compose build
+```
+Run the container (Add -d flag to launch without the logs)
+```
+docker-compose up
+```
+Stop the container
+```
+docker-compose down
+```
+
 
 ## Project explanation
 
