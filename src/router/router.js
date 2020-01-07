@@ -1,10 +1,7 @@
 import Vue from 'vue'
 import Home from '../components/Home.vue'
-import TodoList from '../components/TodoList.vue'
-import Notes from '../components/Notes.vue'
-import PetList from '../components/PetList.vue'
-import Width from '../components/Width.vue';
-import Cities from '../components/Cities.vue';
+import StatefulFunctional from '../components/StatefulFunctional.vue'
+
 
 import VueRouter from 'vue-router'
 
@@ -19,29 +16,9 @@ export default new VueRouter({
             component: Home
         },
         {
-            name: 'todo',
-            path: '/todo',
-            component: TodoList
+            name: 'sf',
+            path: '/sf',
+            component: StatefulFunctional
         },
-        {
-            name: 'notes',
-            path: '/notes',
-            component: Notes
-        },
-        {
-            name: 'petlist',
-            path: '/petlist',
-            component: PetList
-        },
-        {
-            name: 'width',
-            path: "/width",
-            component: Width
-        },
-        {
-            name: 'cities',
-            path: 'cities',
-            component: Cities
-        }
     ]
 })
