@@ -8,7 +8,11 @@
 
                 <v-toolbar-items>
                     <v-btn :to="{ name: 'home'}" text>Home</v-btn>
-                    <v-btn :to="{ name: 'sf'}" text>Functional Components</v-btn>
+                    <v-btn :to="{ name: 'todo'}" text>Todos</v-btn>
+                    <v-btn :to="{ name: 'notes'}" text>Notes</v-btn>
+                    <v-btn :to="{ name: 'petlist'}" text>Pet List</v-btn>
+                    <v-btn :to="{ name: 'width'}" text>Width</v-btn>
+                    <v-btn :to="{ name: 'cities'}" text>Cities</v-btn>
                 </v-toolbar-items>
             </v-toolbar>
         </div>
