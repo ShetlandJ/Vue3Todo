@@ -996,6 +996,13 @@
     source-map "~0.6.1"
     vue-template-es2015-compiler "^1.9.0"
 
+"@vue/composition-api@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-0.2.1.tgz#d6b4327b308ac474982536f86bf44dd00271742d"
+  integrity sha512-eRmvToKbNjFXYyuFZ8e9KUcBXwDj0PQR1ngZP4u3R2jR9yjIbvgEsj7IKoddSKYiEkMttn+JiaSKX7n+REQBBw==
+  dependencies:
+    tslib "^1.9.3"
+
 "@vue/preload-webpack-plugin@^1.1.0":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@vue/preload-webpack-plugin/-/preload-webpack-plugin-1.1.1.tgz#18723530d304f443021da2292d6ec9502826104a"
@@ -5008,6 +5015,11 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+material-design-icons-iconfont@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/material-design-icons-iconfont/-/material-design-icons-iconfont-5.0.1.tgz#371875ed7fe9c8c520bc7123c3231feeab731c31"
+  integrity sha512-Xg6rIdGrfySTqiTZ6d+nQbcFepS6R4uKbJP0oAqyeZXJY/bX6mZDnOmmUJusqLXfhIwirs0c++a6JpqVa8RFvA==
+
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/md5.js/-/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -6468,9 +6480,9 @@ qs@6.7.0:
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 query-string@^5.0.1:
   version "5.1.1"
@@ -8039,13 +8051,6 @@ vue-eslint-parser@^5.0.0:
     esquery "^1.0.1"
     lodash "^4.17.11"
 
-vue-function-api@^2.1.2:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/vue-function-api/-/vue-function-api-2.1.2.tgz#ba43d1b379b0a862daeb0dac3a63069eecefa5e6"
-  integrity sha512-JrQIGrfyWta4+8e1JIaQB8gZjhYqs+yOkBMXD+j1248iGu4YrwMVV3x0RRXnsAFmghWrrjkXYzesrJH/+7UXBA==
-  dependencies:
-    tslib "^1.9.3"
-
 vue-hot-reload-api@^2.3.0:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
@@ -8061,6 +8066,11 @@ vue-loader@^15.7.0:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-router@^3.1.2:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.6.5.tgz#95847d52b9a7e3f1361cb605c8e6441f202afad8"
+  integrity sha512-VYXZQLtjuvKxxcshuRAwjHnciqZVoXAjTjcqBTz4rKc8qih9g9pI3hbDjmqXaHdgL3v8pV6P8Z335XvHzESxLQ==
 
 vue-style-loader@^4.1.0:
   version "4.1.2"
